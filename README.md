@@ -5,13 +5,23 @@ A machine learning project to predict passenger survival on the Titanic using st
 ## 📁 Project Structure
 
 ```
-📂 project_root
- ├── data/              # Raw & processed datasets
- ├── notebooks/         # Jupyter notebooks for EDA, modeling
- ├── src/               # Python source code
- ├── models/            # Saved models
- ├── submissions/       # Kaggle submission files
- └── README.txt
+📂 titanic
+ ├── data/                      # 데이터셋 및 전처리 결과
+ │    ├── train.csv
+ │    ├── test.csv
+ │    ├── X_train.pkl           # 전처리 이후 최종 Train 데이터
+ │    ├── y_train.pkl
+ │    └── X_test.pkl
+ │
+ ├── notebooks/                 # Jupyter Notebook 실험 파일
+ │    ├── eda.ipynb             # 탐색적 데이터 분석 (EDA)
+ │    ├── preprocessing.ipynb   # 전처리 & Feature Engineering
+ │    └── model.ipynb  # 모델 학습 및 검증
+ │
+ ├── submission/
+ │    └── submission_final.csv  # 캐글 제출 파일
+ │
+ └── README.md                  
 ```
 
 ## 🎯 Project Goal
